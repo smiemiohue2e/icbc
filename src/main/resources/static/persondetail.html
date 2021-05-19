@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div>
+
+        <section class="ui-container">
+            <!--<ul class="ui-list ui-border-tb" >-->
+            <ul class="ui-list ui-border-tb" style="background: #20C9D4">
+                <li class="ui-border-t">
+                    <div class="ui-avatar">
+                        <span id="headImg" style=""></span>
+                    </div>
+                    <div class="ui-list-info">
+                        <span>姓名:</span>
+                        <span class="ui-nowrap" id="memberName"></span>
+                        <p>
+                            <span>学工号:</span>
+                            <span id="memberCode" class="ui-txt-info"></span>
+                            <br>
+                            <span>性别:</span>
+                            <span id="gender" class="ui-txt-info"></span>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="ui-form ui-border-t" id="all">
+                <div class="ui-form-item ui-form-item-show ui-border-b">
+                    <label>部门描述:</label>
+                    <input type="text" id="deptDes" value="" readonly>
+                </div>
+                <div class="ui-form-item ui-form-item-show ui-border-b">
+                    <label>身份描述:</label>
+                    <input type="text" id="ideDes" value="" readonly>
+                </div>
+                <div class="ui-form-item ui-form-item-show ui-border-b">
+                    <label>联系方式:</label>
+                    <input type="text" id="telephone" value="" readonly>
+                </div>
+                <div class="ui-form-item ui-form-item-show ui-border-b">
+                    <label>一卡通账号:</label>
+                    <input type="text" id="accountNo" value="" readonly>
+                </div>
+                <div class="ui-form-item ui-form-item-show ui-border-b">
+                    <label>证件号码:</label>
+                    <input type="text" id="identityNo" value="" readonly>
+                </div>
+                <div id="aaa">
+                    <div class="ui-form-item ui-form-item-show ui-border-b" id="aaa" name="aaa">
+                        <label>银行卡号1:</label>
+                        <input type="text" id="bankNumber" value="" readonly>
+                    </div>
+                </div>
+                <div class="ui-form-item ui-form-item-show ui-border-b" id="bbb" name="bbb">
+                    <label>银行卡号2:</label>
+                    <input type="text" id="bbnkNumber" value="" readonly>
+                </div>
+                <div class="ui-form-item ui-form-item-show ui-border-b" id="ccc" name="ccc">
+                    <label>银行卡号3:</label>
+                    <input type="text" id="bcnkNumber" value="" readonly>
+                </div>
+                <div class="ui-form-item ui-form-item-show ui-border-b">
+                    <label>卡类型:</label>
+                    <div class="ui-select">
+                        <select id="mcard" onchange="leixin()">
+                            <option value="0">实体卡</option>
+                            <option value="1">副卡</option>
+
+                        </select>
+                    </div>
+                    <!--<input type="text" id="mcard" value="" readonly>-->
+                </div>
+                <div class="ui-form-item ui-form-item-show ui-border-b">
+                    <label>卡状态:</label>
+                    <input type="text" id="cardStatus" value="" readonly>
+                </div>
+                <div class="ui-form-item ui-form-item-show ui-border-b">
+                    <label>有效期:</label>
+                    <input type="text" id="validityDate" value="" readonly>
+                </div>
+                <div class="ui-form-item ui-form-item-show ui-border-b">
+                    <label>卡余额:</label>
+                    <input type="text" id="cardBalance" value="" readonly>
+                </div>
+                <div class="ui-form-item ui-form-item-show ui-border-b">
+                    <label>未领取余额:</label>
+                    <input type="text" id="unsettleAmt" value="" readonly>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
