@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>交易记录查询</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="../frozen/frozen.css">
+    <link rel="stylesheet" href="../jqweui/weui.min.css">
+    <link rel="stylesheet" href="../smart/smart.css">
+    <script src="../smart/zepto.js"></script>
+    <script src="../smart/smart.js"></script>
+    <script src="../smart/aq_common.js"></script>
+    <script src="../js/chaxun.js"></script>
+<style>
+    .huati_btn {
+        width: 175px;
+        height: 32px;
+        background: #34a0f0;
+        border-radius: 3px;
+        font: 14px/32px "΢���ź�";
+        display: block;
+        overflow: hidden;
+        margin: 0 auto;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .huati {
+        height: 40px;
+        padding-top: 9px;
+        border-bottom: 1px dashed #cecece;
+    }
+
+    .tit a span {
+        color: #34a0f0;
+    }
+
+    .story {
+        border-bottom: 1px dashed #cecece;
+        padding: 0 15px 3px;
+    }
+
+    .story_t {
+        font-size: 14px;
+        color: #313131;
+        padding-top: 5px;
+    }
+
+    .story_m {
+        color: #868686;
+        line-height: 21px;
+        word-break: break-all;
+        word-wrap: break-word;
+        overflow: hidden;
+    }
+
+    .story_time {
+        text-align: right;
+        color: #868686;
+    }
+
+    .demo {
+        padding: 20px 0 0 10px;
+    }
+
+</style>
+</head>
+<body>
+
+    <div>
+        <div class="weui-flex">
+            <div class="weui-flex__item"><a id="a" class="weui-btn weui-btn_default">全部</a></div>
+            <div class="weui-flex__item"><a id="b" class="weui-btn weui-btn_default">充值</a></div>
+            <div class="weui-flex__item"><a id="c" class="weui-btn weui-btn_default">消费</a></div>
+        </div>
+    </div>
+
+    <hr class="hr2" />
+
+
+    <div class="demo">
+        <span style="font-size: 14px;">起始日期：</span>
+        <input type="text" placeholder="日期" id="i_mui_calendar" class="form-text" readonly="readonly" value="">
+    </div>
+    <div class="demo">
+        <span style="font-size: 14px;">结束日期：</span>
+        <input type="text" placeholder="日期" id="i_mui_calendar1" class="form-text" readonly="readonly" value="">
+    </div>
+    <hr class="hr1" />
+
+    <div class="demo" style="font-size: 14px;">
+        当前累计充值金额：<span id="1"></span><span>元</span>
+    </div>
+
+    <div class="demo" style="font-size: 14px;">
+        当前累计消费金额：<span id="2"></span><span>元</span>
+    </div>
+    <hr class="hr1" />
+
+    <div>
+        <div class="sample" id="chaxun">
+
+        </div>
+    </div>
+
+    <div class="demo" style="font-size: 14px;" id="meiyou">
+        该用户没有交易记录
+    </div>
+
+    <hr class="hr1" />
+
+    <div class="demo" style="font-size: 14px;" id="">
+        仅显示最近40条记录
+    </div>
+    <hr class="hr2" />
+     <!--<div id="shangxia">-->
+    <!--<div class="smart-form-button-item">-->
+        <!--<button id="prepage" class="smart-button" style="background-color:#20C9D4">上一页</button>-->
+        <!--<button id="nextpage" class="smart-button" style="background-color:#20C9D4">下一页</button>-->
+    <!--</div>-->
+<!--</div>-->
+
+
+
+
+    <div id="tishi" style="display:none">
+        <div class="weui-mask weui-mask--visible"></div>
+        <div class="weui-dialog weui-dialog--visible">
+            <div class="weui-dialog__hd">
+                <strong class="weui-dialog__title">warring</strong>
+            </div>
+            <div class="weui-dialog__bd">未绑定微信号，请绑定</div>
+            <div class="weui-dialog__ft"><a href="javascript:;" onclick="h1()" class="weui-dialog__btn primary">确定</a></div>
+        </div>
+    </div>
+
+
+</body>
+</html>
